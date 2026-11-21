@@ -106,14 +106,7 @@ python app.py
 
 The API starts on `http://localhost:5000/api/notes`. To test the frontend locally, change the API address inside `frontend/index.html` to `http://localhost:5000/api/notes` and open the file in your browser.
 
-## Screenshots
 
-Add your screenshots to a `screenshots` folder and the images below will appear.
-
-| | |
-|---|---|
-| ![Live app](screenshots/07-live-app.png) | ![GitHub Actions](screenshots/02-actions.png) |
-| ![S3 bucket](screenshots/04-s3-bucket.png) | ![EC2 instance](screenshots/06-ec2.png) |
 
 ## Future Improvements
 
