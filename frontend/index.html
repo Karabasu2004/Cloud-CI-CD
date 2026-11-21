@@ -18,7 +18,7 @@
 
   <script>
     async function load() {
-      const r = await fetch("/api/notes");
+      const r = await fetch("http://54.197.21.97:5000/api/notes");
       const data = await r.json();
       document.getElementById("list").innerHTML =
         data.map(n => "<li>" + n.text + "</li>").join("");
@@ -26,7 +26,7 @@
     async function addNote() {
       const t = document.getElementById("note").value;
       if (!t) return;
-      await fetch("/api/notes", {
+      await fetch("http://54.197.21.97:5000/api/notes", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text: t })
