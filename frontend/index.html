@@ -18,7 +18,7 @@
 
   <script>
     async function load() {
-      const r = await fetch("http://54.197.21.97:5000/api/notes");
+      const r = await fetch("http://184.193.155.254:5000/api/notes");
       const data = await r.json();
       document.getElementById("list").innerHTML =
         data.map(n => "<li>" + n.text + "</li>").join("");
